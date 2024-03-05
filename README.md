@@ -18,6 +18,35 @@ This repository contains the backend API for a stateless CRUD (Create, Read, Upd
 
 3. To start the server, run the following command:
 
-  ```bash
-  npm start
+   ```bash
+   npm start
+
+## API Endpoints
+Policies
+Create Policy
+
+Endpoint: POST /policies
+Request Body: { "id": "policy_id", "user_name": "user_name", "amount": "amount", "policytype": "policy_type" }
+Get All Policies
+
+Endpoint: GET /policies
+Claims
+Create Claim
+
+Endpoint: POST /claims
+Request Body: { "id": "claim_id", "policy_id": "policy_id", "amount": "amount", "claimantName": "claimant_name", "claimDescription": "claim_description", "user_name": "user_name" }
+Get Claim by ID
+
+Endpoint: GET /claims/:id
+Update Claim
+
+Endpoint: PUT /claims/:id
+Request Body: { "amount": "new_amount" }
+Delete Claim
+
+Endpoint: DELETE /claims/:id
+
+## Note
+Ensure to replace your-username with your GitHub username in the clone command.
+The API uses in-memory data structures for demonstration purposes. For production use, consider using a database for data persistence.
 
