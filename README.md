@@ -48,5 +48,5 @@ Endpoint: DELETE /claims/:id
 
 ## Note
 Ensure to replace your-username with your GitHub username in the clone command.
-The API uses in-memory data structures for demonstration purposes. For production use, consider using a database for data persistence.
+
 
